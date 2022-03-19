@@ -1,0 +1,94 @@
+@use "../../Styles//variables.scss" as varr;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.7rem;
+  background-color: white;
+  padding: 2.5rem varr.$main_side_padding;
+  position: fixed;
+  width: 100%;
+
+  .logo__search {
+    display: flex;
+    align-items: center;
+    gap: varr.$gap_main;
+
+    .logo {
+      height: 4.5rem;
+    }
+
+    .open_sidebar {
+      display: none;
+    }
+
+    .search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4.4rem;
+      border: 0.5px solid #999;
+      width: 38rem;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      overflow: hidden;
+
+      input {
+        border: none;
+        outline: none;
+        font-size: 1.8rem;
+        height: 100%;
+        width: 100%;
+        padding: 0 1.5rem;
+      }
+
+      .search__icon {
+        padding: 0.7rem;
+      }
+    }
+
+    .search:hover {
+      border: 0.5px solid #3b49df;
+    }
+
+    // .search:focus {
+    //   border: 4.5px solid red;
+    // }
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    gap: varr.$gap_main;
+    font-size: varr.$main_font;
+
+    a {
+      text-decoration: none;
+      color: varr.$text_color;
+      padding: 1.3rem;
+      border-radius: 0.8rem;
+      -webkit-border-radius: 0.8rem;
+      -moz-border-radius: 0.8rem;
+      -ms-border-radius: 0.8rem;
+      -o-border-radius: 0.8rem;
+    }
+
+    .signup {
+      border: 1px solid varr.$main_blue;
+    }
+
+    .signup:hover,
+    .signup:active {
+      background-color: varr.$main_blue;
+      color: white;
+    }
+
+    .login:hover {
+      background-color: varr.$hover_bg;
+    }
+  }
+}

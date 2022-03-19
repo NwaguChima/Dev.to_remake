@@ -2,22 +2,16 @@
 
 $app-font: "Roboto", sans-serif;
 
-// colors
-$bg: #fafafa;
-$bg-alt: #000;
-$bg-wa: #128c7e;
-$bg-hover: #dcefed;
-$bg_header: #f7f7fc;
-$bg_message: #f6f6f6;
-$font-stroke: #130f26;
-$name-color: #09132c;
-$sender-bg-color: #d7f8f4;
-$time-color: #0b3048;
-$enc-bg-color: #feecdc;
-$enc-color: #312e40;
-$bg_enc: #feecdc;
+// Newwww
+// spacing
+$gap_main: 1.5rem;
+$main_font: 1.8rem;
+$main_side_padding: 10rem;
 
-$text: #010101;
+$text_color: #444;
+$bg_color: #f5f5f5;
+$main_blue: #3b49df;
+$hover_bg: #d8dbf9;
 
 // Media query points
 $md: 70rem;

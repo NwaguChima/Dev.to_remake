@@ -1,0 +1,12 @@
+@use "../../Styles/variables.scss" as varr;
+
+.main__container {
+  display: flex;
+  //   align-items: center;
+  justify-content: space-between;
+  padding: 7rem varr.$main_side_padding;
+  gap: varr.$gap_main;
+
+  ////
+  height: 150vh;
+}
