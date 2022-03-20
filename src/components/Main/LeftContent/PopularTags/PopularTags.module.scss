@@ -1,0 +1,32 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.tags__list {
+  //   background-color: aquamarine;
+  height: 25rem;
+  overflow: scroll;
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    gap: varr.$gap_main;
+    text-decoration: none;
+    padding: varr.$padding_links;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+  }
+
+  li:hover,
+  li:active {
+    background-color: varr.$hover_bg;
+  }
+}

@@ -7,13 +7,15 @@ import NavStyle from "../SideNav/SideNav.module.scss";
 const SocialIcons = () => {
   return (
     <div className={styles.social__container}>
-      <ul className={NavStyle.nav__list}>
+      <ul className={styles.nav__list}>
         <li className={NavStyle.list_item}>
           <a
             href="https://twitter.com/thepracticaldev"
+            target="_blank"
+            rel="noreferrer"
             className={NavStyle.item_link}
           >
-            <i className={`${NavStyle.item_i} ${styles.yellowI}`}>
+            <i className={`${NavStyle.item_i} ${styles.colorIcon}`}>
               <BsTwitter />
             </i>
           </a>
@@ -21,9 +23,11 @@ const SocialIcons = () => {
         <li className={NavStyle.list_item}>
           <a
             href="https://www.facebook.com/thepracticaldev"
+            target="_blank"
+            rel="noreferrer"
             className={NavStyle.item_link}
           >
-            <i className={`${NavStyle.item_i} ${styles.yellowI}`}>
+            <i className={`${NavStyle.item_i} ${styles.colorIcon}`}>
               <BsFacebook />
             </i>
           </a>
@@ -31,9 +35,11 @@ const SocialIcons = () => {
         <li className={NavStyle.list_item}>
           <a
             href="https://github.com/thepracticaldev"
+            target="_blank"
+            rel="noreferrer"
             className={NavStyle.item_link}
           >
-            <i className={NavStyle.item_i}>
+            <i className={`${NavStyle.item_i} ${styles.colorIcon}`}>
               <BsGithub />
             </i>
           </a>
@@ -41,9 +47,11 @@ const SocialIcons = () => {
         <li className={NavStyle.list_item}>
           <a
             href="instagram.com/thepracticaldev/"
+            target="_blank"
+            rel="noreferrer"
             className={NavStyle.item_link}
           >
-            <i className={NavStyle.item_i}>
+            <i className={`${NavStyle.item_i} ${styles.colorIcon}`}>
               <AiFillInstagram />
             </i>
           </a>
@@ -51,9 +59,11 @@ const SocialIcons = () => {
         <li className={NavStyle.list_item}>
           <a
             href="https://www.twitch.tv/thepracticaldev"
+            target="_blank"
+            rel="noreferrer"
             className={NavStyle.item_link}
           >
-            <i className={NavStyle.item_i}>
+            <i className={`${NavStyle.item_i} ${styles.colorIcon}`}>
               <BsTwitch />
             </i>
           </a>

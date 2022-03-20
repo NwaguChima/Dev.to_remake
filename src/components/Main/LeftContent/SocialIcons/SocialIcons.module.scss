@@ -1,0 +1,23 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.social__container {
+  padding: 1.5rem 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: varr.$gap_main;
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .colorIcon:hover,
+  .colorIcon:active {
+    color: varr.$main_blue;
+  }
+}
