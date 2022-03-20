@@ -1,0 +1,65 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.community__container {
+  display: flex;
+  flex-direction: column;
+  gap: varr.$gap_main;
+  background-color: varr.$white_bg;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  padding: 2.5rem 2rem;
+
+  .community_header {
+    font-size: 2.3rem;
+    line-height: 1.3;
+
+    .sub_header {
+      //   font-size: 2.4rem;
+      color: varr.$main_blue;
+    }
+  }
+
+  .dev_comm__text {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+
+  gap: varr.$gap_main;
+  font-size: varr.$main_font;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: varr.$text_color;
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+  }
+
+  .signup {
+    border: 1px solid varr.$main_blue;
+  }
+
+  .signup:hover,
+  .signup:active {
+    background-color: varr.$main_blue;
+    color: varr.$white_bg;
+  }
+
+  .login:hover {
+    background-color: varr.$hover_bg;
+  }
+}

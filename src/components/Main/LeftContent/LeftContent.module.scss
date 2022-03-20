@@ -3,4 +3,6 @@
 .left__container {
   background-color: greenyellow;
   flex-basis: 27rem;
+  display: flex;
+  align-content: flex-end;
 }

@@ -59,36 +59,36 @@ header {
     //   border: 4.5px solid red;
     // }
   }
+}
 
-  .auth {
-    display: flex;
-    align-items: center;
-    gap: varr.$gap_main;
-    font-size: varr.$main_font;
+.auth {
+  display: flex;
+  align-items: center;
+  gap: varr.$gap_main;
+  font-size: varr.$main_font;
 
-    a {
-      text-decoration: none;
-      color: varr.$text_color;
-      padding: 1.3rem;
-      border-radius: 0.8rem;
-      -webkit-border-radius: 0.8rem;
-      -moz-border-radius: 0.8rem;
-      -ms-border-radius: 0.8rem;
-      -o-border-radius: 0.8rem;
-    }
+  a {
+    text-decoration: none;
+    color: varr.$text_color;
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+  }
 
-    .signup {
-      border: 1px solid varr.$main_blue;
-    }
+  .signup {
+    border: 1px solid varr.$main_blue;
+  }
 
-    .signup:hover,
-    .signup:active {
-      background-color: varr.$main_blue;
-      color: white;
-    }
+  .signup:hover,
+  .signup:active {
+    background-color: varr.$main_blue;
+    color: white;
+  }
 
-    .login:hover {
-      background-color: varr.$hover_bg;
-    }
+  .login:hover {
+    background-color: varr.$hover_bg;
   }
 }
