@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: varr.$gap_L;
   background-color: varr.$right__bg_white;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -14,12 +15,22 @@
     display: flex;
     flex-direction: column;
     gap: varr.$gap_L;
-    padding: varr.$padding_cards;
 
     .deepgram__list {
       display: flex;
       flex-direction: column;
       //   gap: varr.$gap_main;
+    }
+
+    .deepgram__header {
+      padding: 0 1.2rem;
+      font-size: 2.2rem;
+      line-height: 1.4;
+    }
+
+    .deepgram__header:hover,
+    .deepgram__header:active {
+      color: varr.$main_blue;
     }
   }
 
@@ -33,16 +44,15 @@
     a {
       padding: varr.$padding_links;
       color: varr.$white_bg;
-
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      border-radius: 1rem;
-      -webkit-border-radius: 1rem;
-      -moz-border-radius: 1rem;
-      -ms-border-radius: 1rem;
-      -o-border-radius: 1rem;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
     }
 
     .see__all {
@@ -64,13 +74,10 @@
       background-color: varr.$mainBlue_hover;
     }
   }
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-
-  box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.35);
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.35);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.35);
+  box-shadow: varr.$box_shadow;
+  border-radius: varr.$border_radius_main;
+  -webkit-border-radius: varr.$border_radius_main;
+  -moz-border-radius: varr.$border_radius_main;
+  -ms-border-radius: varr.$border_radius_main;
+  -o-border-radius: varr.$border_radius_main;
 }
