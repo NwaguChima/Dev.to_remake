@@ -1,0 +1,36 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.query__container {
+  display: flex;
+  flex-direction: column;
+  gap: varr.$gap_main;
+  margin-top: 2rem;
+
+  h3 {
+    font-family: fantasy;
+  }
+
+  .query {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: varr.$gap_cardtext;
+    border-top: 0.5px solid rgba(153, 153, 153, 0.123);
+    border-bottom: 0.1px solid rgba(153, 153, 153, 0.123);
+
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: varr.$padding_links;
+  }
+
+  .query:hover,
+  .query:active {
+    background-color: varr.$white_bg;
+
+    p {
+      color: varr.$main_blue;
+    }
+  }
+}

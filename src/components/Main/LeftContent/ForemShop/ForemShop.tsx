@@ -1,4 +1,3 @@
-import React from "react";
 import forumshopLogo from "../../../../assets/foremLogo.png";
 import styles from "./ForemShop.module.scss";
 

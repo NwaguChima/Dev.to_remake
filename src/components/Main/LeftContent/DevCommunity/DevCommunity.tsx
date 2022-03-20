@@ -1,6 +1,4 @@
-import React from "react";
 import styles from "./DevCommunity.module.scss";
-import stylesHead from "../../../Header/Header.module.scss";
 
 const DevCommunity = () => {
   return (

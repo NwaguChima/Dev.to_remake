@@ -1,4 +1,3 @@
-import React from "react";
 import deepgramLogo from "../../../../assets/deepgramLogo.webp";
 import styles from "./Deepgram.module.scss";
 

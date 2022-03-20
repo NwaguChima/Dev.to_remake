@@ -1,4 +1,3 @@
-import React from "react";
 import { FcHome } from "react-icons/fc";
 import { RiFileList3Fill } from "react-icons/ri";
 import { FaMicrophoneAlt, FaShopify } from "react-icons/fa";

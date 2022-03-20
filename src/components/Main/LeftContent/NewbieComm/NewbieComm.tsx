@@ -1,4 +1,3 @@
-import React from "react";
 import newbieLogo from "../../../../assets/communityLogo.png";
 import styles from "./NewbieComm.module.scss";
 

@@ -11,11 +11,11 @@
 
   img {
     width: 100%;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    border-radius: varr.$border_radius_main;
+    -webkit-border-radius: varr.$border_radius_main;
+    -moz-border-radius: varr.$border_radius_main;
+    -ms-border-radius: varr.$border_radius_main;
+    -o-border-radius: varr.$border_radius_main;
   }
 
   .newbie__body {
