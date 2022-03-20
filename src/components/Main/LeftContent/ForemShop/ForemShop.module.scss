@@ -5,7 +5,9 @@
   padding: varr.$padding_cards;
   display: flex;
   flex-direction: column;
+  box-shadow: varr.$box_shadow;
   gap: varr.$gap_L;
+
   img {
     width: 100%;
     border-radius: 0.5rem;

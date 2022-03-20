@@ -1,0 +1,76 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.deepgram__container {
+  display: flex;
+  flex-direction: column;
+  gap: varr.$gap_L;
+  background-color: varr.$right__bg_white;
+
+  img {
+    width: 100%;
+  }
+
+  .deepgram__content {
+    display: flex;
+    flex-direction: column;
+    gap: varr.$gap_L;
+    padding: varr.$padding_cards;
+
+    .deepgram__list {
+      display: flex;
+      flex-direction: column;
+      //   gap: varr.$gap_main;
+    }
+  }
+
+  .deepgram__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: varr.$gap_cardtext;
+
+    a {
+      padding: varr.$padding_links;
+      color: varr.$white_bg;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+    }
+
+    .see__all {
+      background-color: varr.$grey_bg;
+      color: varr.$text_color;
+    }
+
+    .see__all:hover,
+    .see__all:active {
+      background-color: varr.$greybg_hover;
+    }
+
+    .submit__project {
+      background-color: varr.$main_blue;
+    }
+
+    .submit__project:hover,
+    .submit__project:active {
+      background-color: varr.$mainBlue_hover;
+    }
+  }
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+
+  box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.35);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.35);
+}

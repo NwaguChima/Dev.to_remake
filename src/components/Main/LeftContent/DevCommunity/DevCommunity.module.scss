@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: varr.$gap_main;
   background-color: varr.$white_bg;
+  box-shadow: varr.$box_shadow;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -17,7 +18,6 @@
     line-height: 1.3;
 
     .sub_header {
-      //   font-size: 2.4rem;
       color: varr.$main_blue;
     }
   }

@@ -38,3 +38,27 @@ body {
   font-size: varr.$main_font;
   // overflow-x: hidden;
 }
+
+.right__list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  // gap: varr.$gap_main;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: varr.$padding_links;
+}
+
+.right__list:hover,
+.right__list:active {
+  background-color: varr.$white_bg;
+  color: varr.$main_blue;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 400;
+}
