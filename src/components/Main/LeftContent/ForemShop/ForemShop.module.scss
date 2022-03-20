@@ -1,13 +1,11 @@
 @use "../../../../Styles/variables.scss" as varr;
 
-.newbie__card {
+.forum_shop__card {
   background-color: varr.$white_bg;
   padding: varr.$padding_cards;
   display: flex;
   flex-direction: column;
   gap: varr.$gap_L;
-  margin-bottom: 2rem;
-
   img {
     width: 100%;
     border-radius: 0.5rem;
@@ -32,6 +30,7 @@
       color: varr.$main_blue;
     }
   }
+
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
