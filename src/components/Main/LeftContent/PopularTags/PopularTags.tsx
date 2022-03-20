@@ -2,7 +2,22 @@ import React from "react";
 import styles from "./PopularTags.module.scss";
 
 let tags = [
-  "javascript, webdev, beginners, programming, tutorial, react, python, node, html, css, devops, typescript, github, python, .net, java",
+  "javascript",
+  "webdev",
+  "beginners",
+  "programming",
+  "tutorial",
+  "react",
+  "python",
+  "node",
+  "html",
+  "css",
+  "devops",
+  "typescript",
+  "github",
+  "python",
+  ".net",
+  "java",
 ];
 
 const PopularTags = () => {

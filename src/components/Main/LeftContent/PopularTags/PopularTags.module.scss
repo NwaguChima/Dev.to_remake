@@ -1,12 +1,17 @@
 @use "../../../../Styles/variables.scss" as varr;
 
+.popular_tags__container {
+  margin-top: 1rem;
+}
+
 .tags__list {
-  //   background-color: aquamarine;
   height: 25rem;
   overflow: scroll;
 
   ul {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 
   li {
@@ -28,5 +33,6 @@
   li:hover,
   li:active {
     background-color: varr.$hover_bg;
+    color: varr.$main_blue;
   }
 }
