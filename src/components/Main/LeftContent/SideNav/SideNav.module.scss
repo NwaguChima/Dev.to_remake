@@ -1,0 +1,43 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.side__nav {
+  padding: varr.$leftside_padding;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  .item_link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: varr.$gap_main;
+    text-decoration: none;
+    padding: varr.$padding_links;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+
+    .item_T {
+      color: varr.$text_color;
+    }
+  }
+
+  .item_link:hover,
+  .item_link:active {
+    background-color: varr.$hover_bg;
+  }
+}
+
+.sponsors,
+.shopify {
+  color: red;
+}
+
+.tags {
+  color: #d8d81b;
+}

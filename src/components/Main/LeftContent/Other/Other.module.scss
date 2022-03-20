@@ -1,0 +1,11 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.other__container {
+  display: flex;
+  flex-direction: column;
+  gap: varr.$gap_main;
+
+  .yellowI {
+    color: #d8d81b;
+  }
+}
