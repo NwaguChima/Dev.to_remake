@@ -1,0 +1,58 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.help__container {
+  background-color: varr.$right__bg_white;
+
+  h3 {
+    padding: varr.$padding_cards;
+  }
+
+  h3:hover,
+  h3:active {
+    color: varr.$main_blue;
+  }
+
+  border-radius: varr.$border_radius_main;
+  -moz-border-radius: varr.$border_radius_main;
+  -ms-border-radius: varr.$border_radius_main;
+  -o-border-radius: varr.$border_radius_main;
+  -webkit-border-radius: varr.$border_radius_main;
+
+  box-shadow: varr.$box_shadow;
+}
+
+.job__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  gap: varr.$gap_cardtext;
+  border-top: 0.5px solid rgba(153, 153, 153, 0.123);
+  border-bottom: 0.1px solid rgba(153, 153, 153, 0.123);
+
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: varr.$padding_links;
+
+  span {
+    font-size: 1.5rem;
+    border-radius: varr.$border_radius_main;
+    -webkit-border-radius: varr.$border_radius_main;
+    -moz-border-radius: varr.$border_radius_main;
+    -ms-border-radius: varr.$border_radius_main;
+    -o-border-radius: varr.$border_radius_main;
+    padding: 0.1rem 0.4rem;
+  }
+}
+
+.new {
+  background-color: rgb(255, 217, 0);
+  color: rgb(216, 133, 95);
+}
+
+.job__list:hover,
+.job__list:active {
+  background-color: varr.$white_bg;
+  color: varr.$main_blue;
+}
