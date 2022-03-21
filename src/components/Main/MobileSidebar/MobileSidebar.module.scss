@@ -1,0 +1,65 @@
+@use "../../../Styles/variables.scss" as varr;
+
+.mobile__side {
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0.8rem;
+  height: 100vh;
+  overflow: scroll;
+  background-color: white;
+  background-color: #ebedfc;
+  top: 0;
+  left: 0;
+  display: none;
+
+  .mobile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: varr.$padding_cards;
+
+    i {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mobile__side {
+    display: flex;
+  }
+}
+
+.moveIn {
+  z-index: 30000;
+  animation-name: main;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  @keyframes main {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+}
+
+.moveOut {
+  z-index: 0;
+  animation-name: side;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  @keyframes side {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+}

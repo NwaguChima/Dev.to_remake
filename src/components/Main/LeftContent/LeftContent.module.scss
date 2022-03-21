@@ -1,7 +1,13 @@
 @use "../../../Styles/variables.scss" as varr;
 
 .left__container {
-  flex-basis: 27rem;
+  flex-basis: 30rem;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+  .left__container {
+    display: none;
+  }
 }

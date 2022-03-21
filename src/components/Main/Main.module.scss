@@ -2,8 +2,13 @@
 
 .main__container {
   display: flex;
-  //   align-items: center;
   justify-content: space-between;
-  padding: 8rem varr.$main_side_padding;
+  padding: 8rem 2%;
   gap: varr.$gap_main;
+  position: relative;
+}
+
+.stopScroll {
+  height: 100vh;
+  overflow: hidden;
 }

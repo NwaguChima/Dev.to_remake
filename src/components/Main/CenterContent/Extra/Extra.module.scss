@@ -1,0 +1,91 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.extra__Container {
+  display: flex;
+  gap: varr.$gap_L;
+  padding: 3rem 2rem;
+
+  .logo {
+    height: 4.5rem;
+    margin-top: 2rem;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+
+  .extra__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-size: 3.5rem;
+      color: black;
+      line-height: 1.3;
+
+      span {
+        color: varr.$main_blue;
+      }
+    }
+
+    p {
+      word-spacing: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: varr.$gap_main;
+      font-size: varr.$main_font;
+      width: 100%;
+      padding: 3rem 0;
+
+      a {
+        text-decoration: none;
+        color: varr.$text_color;
+        padding: 1.3rem;
+        border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+      }
+
+      .signup,
+      .login {
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+      }
+
+      .signup {
+        border: 1px solid varr.$main_blue;
+        background-color: varr.$main_blue;
+        color: white;
+      }
+
+      .login {
+        color: varr.$main_blue;
+      }
+
+      .signup:hover,
+      .signup:active {
+        background-color: varr.$mainBlue_hover;
+      }
+
+      .login:hover {
+        background-color: varr.$grey_bg;
+      }
+    }
+  }
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}

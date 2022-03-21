@@ -1,8 +1,14 @@
 @use "../../../Styles/variables.scss" as varr;
 
 .right__container {
-  flex-basis: 36.5rem;
+  flex-basis: 40.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .right__container {
+    display: none;
+  }
 }

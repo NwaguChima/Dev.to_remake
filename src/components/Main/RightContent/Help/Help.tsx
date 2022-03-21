@@ -9,8 +9,8 @@ const Help = () => {
         <h3 className={styles.listings__header}>#Help</h3>
       </a>
       <ul className={styles.listings__list}>
-        {help.map((el) => (
-          <a href={el.link}>
+        {help.map((el, i) => (
+          <a href={el.link} key={el.link + i}>
             <li className={styles.job__list}>
               <p>{el.title}</p>
               <span className={el.new ? styles.new : ""}>

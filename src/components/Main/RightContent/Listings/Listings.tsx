@@ -12,8 +12,8 @@ const Listings = () => {
         </a>
       </div>
       <ul className={styles.listings__list}>
-        {listings.map((el) => (
-          <a href={el.link}>
+        {listings.map((el, i) => (
+          <a href={el.link} key={el.link + i}>
             <li className={styles.job__list}>
               <p>{el.title}</p>
               <span>{el.type}</span>

@@ -7,7 +7,7 @@ const RecentQuery = () => {
       <h3 className={styles.query__header}>recently queried</h3>
       <ul className={styles.query__list}>
         {queries.map((el) => (
-          <a href={el.linK}>
+          <a href={el.linK} key={el.linK}>
             <li className={styles.query}>
               <p>{el.title}</p>
             </li>

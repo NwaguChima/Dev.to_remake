@@ -6,9 +6,11 @@ header {
   align-items: center;
   height: 5.7rem;
   background-color: white;
-  padding: 2.5rem varr.$main_side_padding;
+  // padding: 2.5rem varr.$main_side_padding;
+  padding: 2% 2%;
   position: fixed;
   width: 100%;
+  z-index: 10000;
 
   .logo__search {
     display: flex;
@@ -21,6 +23,10 @@ header {
 
     .open_sidebar {
       display: none;
+
+      @media screen and (max-width: 750px) {
+        display: flex;
+      }
     }
 
     .search {
@@ -49,15 +55,15 @@ header {
       .search__icon {
         padding: 0.7rem;
       }
+
+      @media screen and (max-width: 750px) {
+        display: none;
+      }
     }
 
     .search:hover {
       border: 2px solid #3b49df;
     }
-
-    // .search:focus {
-    //   border: 4.5px solid red;
-    // }
   }
 }
 
@@ -78,6 +84,15 @@ header {
     -o-border-radius: 0.8rem;
   }
 
+  .signup,
+  .login {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+
   .signup {
     border: 1px solid varr.$main_blue;
   }
@@ -90,5 +105,19 @@ header {
 
   .login:hover {
     background-color: varr.$hover_bg;
+  }
+
+  .login {
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  .mobile__search {
+    display: none;
+
+    @media screen and (max-width: 750px) {
+      display: flex;
+    }
   }
 }

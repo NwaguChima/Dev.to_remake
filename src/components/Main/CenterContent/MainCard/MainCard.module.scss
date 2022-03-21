@@ -6,7 +6,6 @@
   gap: varr.$gap_main;
 
   .main__card {
-    padding: varr.$padding_cards;
     background-color: white;
     padding: varr.$padding_links;
     color: #999;
@@ -176,5 +175,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card__container_main {
+    width: 98%;
   }
 }

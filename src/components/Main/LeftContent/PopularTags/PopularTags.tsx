@@ -10,7 +10,6 @@ const PopularTags = () => {
           {tags.map((el, i) => (
             <li key={el + i}>{`#${el}`}</li>
           ))}
-          {/* <li>#javascript</li> */}
         </ul>
       </div>
     </div>

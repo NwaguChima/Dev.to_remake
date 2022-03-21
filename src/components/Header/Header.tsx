@@ -1,13 +1,19 @@
-import React from "react";
+import { useContext } from "react";
 import logo from "../../assets/Logo.png";
 import { BsSearch, BsList } from "react-icons/bs";
 import styles from "./Header.module.scss";
+import ViewContext from "../../context/ViewContext";
 
 const Header = () => {
+  const mobileContext = useContext(ViewContext);
+
   return (
     <header>
       <div className={styles.logo__search}>
-        <i className={styles.open_sidebar}>
+        <i
+          className={styles.open_sidebar}
+          onClick={() => mobileContext?.setMobileView(true)}
+        >
           <BsList />
         </i>
         <a href="https://dev.to/">
@@ -21,6 +27,9 @@ const Header = () => {
         </div>
       </div>
       <nav className={styles.auth}>
+        <i className={styles.mobile__search}>
+          <BsSearch />
+        </i>
         <a href="https://dev.to/enter" className={styles.login}>
           Log in
         </a>

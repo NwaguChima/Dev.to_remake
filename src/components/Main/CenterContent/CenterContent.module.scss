@@ -1,6 +1,11 @@
 @use "../../../Styles/variables.scss" as varr;
 
 .center__container {
-  // background-color: cadetblue;
-  flex-basis: 72.5rem;
+  flex-basis: 75.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .center__container {
+    margin: 0 auto;
+  }
 }
