@@ -1,0 +1,180 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.card__container_main {
+  display: flex;
+  flex-direction: column;
+  gap: varr.$gap_main;
+
+  .main__card {
+    padding: varr.$padding_cards;
+    background-color: white;
+    padding: varr.$padding_links;
+    color: #999;
+    box-shadow: varr.$box_shadow;
+    border-radius: varr.$border_radius_main;
+    -webkit-border-radius: varr.$border_radius_main;
+    -moz-border-radius: varr.$border_radius_main;
+    -ms-border-radius: varr.$border_radius_main;
+    -o-border-radius: varr.$border_radius_main;
+
+    .personal__info {
+      display: flex;
+      gap: varr.$gap_main;
+      align-items: center;
+
+      img {
+        height: 4rem;
+        width: 4rem;
+        object-fit: cover;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+
+      .name_time {
+        display: flex;
+        flex-direction: column;
+        gap: varr.$gap_cardtext;
+        font-weight: 300;
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        h4 {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .other__info {
+      //   background-color: rebeccapurple;
+      padding: varr.$padding_cards;
+      padding-left: 5.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: varr.$gap_main;
+
+      h2 {
+        font-weight: 500;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+      }
+
+      h2:hover,
+      h2:active {
+        color: varr.$main_blue;
+      }
+
+      .tags {
+        display: flex;
+        gap: varr.$gap_main;
+        margin-left: -0.9rem;
+
+        a {
+          border-radius: varr.$border_radius_main;
+          -webkit-border-radius: varr.$border_radius_main;
+          -moz-border-radius: varr.$border_radius_main;
+          -ms-border-radius: varr.$border_radius_main;
+          -o-border-radius: varr.$border_radius_main;
+          padding: 0.8rem;
+          transition: all 1s;
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -ms-transition: all 1s;
+          -o-transition: all 1s;
+        }
+
+        a:hover,
+        a:active {
+          background-color: varr.$hover_bg;
+        }
+      }
+
+      .reaction__comments__save {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -1.2rem;
+
+        .reaction__comme {
+          display: flex;
+          gap: varr.$gap_L;
+
+          .reaction,
+          .comment {
+            display: flex;
+            font-weight: 300;
+            font-size: 1.7rem;
+            align-items: center;
+            gap: varr.$gap_main;
+            padding: 0.3rem 1rem;
+            border-radius: varr.$border_radius_main;
+            -webkit-border-radius: varr.$border_radius_main;
+            -moz-border-radius: varr.$border_radius_main;
+            -ms-border-radius: varr.$border_radius_main;
+            -o-border-radius: varr.$border_radius_main;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+          }
+
+          i {
+            font-size: 2rem;
+          }
+
+          .reaction:hover,
+          .reaction:active,
+          .comment:hover,
+          .comment:active {
+            background-color: #e6e6e7;
+            i {
+              background-color: inherit;
+            }
+          }
+        }
+
+        .save__minread {
+          display: flex;
+          align-items: center;
+          gap: varr.$gap_main;
+
+          p {
+            font-size: 1.4rem;
+            font-weight: 300;
+          }
+
+          span {
+            font-size: 1.8rem;
+            cursor: pointer;
+            font-weight: 400;
+            padding: 0.9rem;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+            background-color: varr.$grey_bg;
+            border-radius: varr.$border_radius_main;
+            -webkit-border-radius: varr.$border_radius_main;
+            -moz-border-radius: varr.$border_radius_main;
+            -ms-border-radius: varr.$border_radius_main;
+            -o-border-radius: varr.$border_radius_main;
+          }
+
+          span:hover,
+          span:active {
+            background-color: varr.$greybg_hover;
+          }
+        }
+      }
+    }
+  }
+}
