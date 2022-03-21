@@ -1,0 +1,30 @@
+@use "../../../../Styles/variables.scss" as varr;
+
+.main__btn {
+  display: flex;
+  gap: varr.$gap_main;
+  font-size: 2rem;
+  cursor: pointer;
+
+  p {
+    padding: varr.$padding_links;
+    color: #999;
+    border-radius: varr.$border_radius_main;
+    -webkit-border-radius: varr.$border_radius_main;
+    -moz-border-radius: varr.$border_radius_main;
+    -ms-border-radius: varr.$border_radius_main;
+    -o-border-radius: varr.$border_radius_main;
+  }
+
+  p:hover,
+  p:active {
+    background-color: varr.$white_bg;
+    padding: varr.$padding_links;
+    color: varr.$main_blue;
+  }
+
+  .relevant {
+    color: black;
+    font-weight: 500;
+  }
+}
