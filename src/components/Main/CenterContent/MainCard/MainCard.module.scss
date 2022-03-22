@@ -4,8 +4,16 @@
   display: flex;
   flex-direction: column;
   gap: varr.$gap_main;
+  // width: 80%;
+
+  @media screen and (max-width: 840px) {
+    .card__container_main {
+      // width: 80%;
+    }
+  }
 
   .main__card {
+    // width: 95%;
     background-color: white;
     padding: varr.$padding_links;
     color: #999;
